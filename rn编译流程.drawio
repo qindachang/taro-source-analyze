@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-14T08:05:48.872Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="5dVzuUwgtFxgZBmsVWmi" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-28T09:10:05.258Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="JW7mx8TsXNwajGtXk2Nu" version="13.6.2" type="github">
   <diagram id="qLGAQN45khurday5uuPe" name="第 1 页">
-    <mxGraphModel dx="1106" dy="672" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="712" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -41,7 +41,7 @@
         <mxCell id="If2TSdoc109izGzcaKSD-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="If2TSdoc109izGzcaKSD-14" vertex="1">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CVPaqhK79-wcYEb8_Y2l-1" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="If2TSdoc109izGzcaKSD-14" target="If2TSdoc109izGzcaKSD-21">
+        <mxCell id="CVPaqhK79-wcYEb8_Y2l-1" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="If2TSdoc109izGzcaKSD-14" target="If2TSdoc109izGzcaKSD-21" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="56" y="72" as="sourcePoint" />
             <mxPoint x="176" y="52" as="targetPoint" />
@@ -60,7 +60,7 @@
         <mxCell id="If2TSdoc109izGzcaKSD-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="If2TSdoc109izGzcaKSD-18" vertex="1">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CVPaqhK79-wcYEb8_Y2l-4" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="If2TSdoc109izGzcaKSD-18" target="CVPaqhK79-wcYEb8_Y2l-3">
+        <mxCell id="CVPaqhK79-wcYEb8_Y2l-4" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="If2TSdoc109izGzcaKSD-18" target="CVPaqhK79-wcYEb8_Y2l-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="40" y="50" as="sourcePoint" />
             <mxPoint x="90" as="targetPoint" />
@@ -72,14 +72,14 @@
         <mxCell id="If2TSdoc109izGzcaKSD-21" value="+ run()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="If2TSdoc109izGzcaKSD-18" vertex="1">
           <mxGeometry y="34" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="CVPaqhK79-wcYEb8_Y2l-2" value="" style="endArrow=classic;html=1;exitX=0.507;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="If2TSdoc109izGzcaKSD-8" target="If2TSdoc109izGzcaKSD-14">
+        <mxCell id="CVPaqhK79-wcYEb8_Y2l-2" value="" style="endArrow=classic;html=1;exitX=0.507;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="If2TSdoc109izGzcaKSD-8" target="If2TSdoc109izGzcaKSD-14" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="160" y="310" as="sourcePoint" />
             <mxPoint x="210" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CVPaqhK79-wcYEb8_Y2l-3" value="- this.init() 在其initPresetsAndPlugins方法中开始编译&lt;br&gt;- this.applyPlugins()&lt;br&gt;- this.runWithPlatform()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="540" y="300" width="270" height="60" as="geometry" />
+        <mxCell id="CVPaqhK79-wcYEb8_Y2l-3" value="- this.init() 在其initPresetsAndPlugins方法中开始编译，编译方法是createBabelRegister。通过require(&#39;@babel/register&#39;)进行编译。&lt;br&gt;- this.applyPlugins()&lt;br&gt;- this.runWithPlatform()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="540" y="300" width="270" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
